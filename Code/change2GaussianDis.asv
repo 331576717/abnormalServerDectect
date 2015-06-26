@@ -1,0 +1,7 @@
+function m=change2GaussianDis(data)
+
+m(:,7)=data(:,7);
+m(:,8:14)=data(:,8:14).^0.1;
+m=abs(data);
+m=log(m+1e-3);
+end
